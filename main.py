@@ -18,7 +18,7 @@ import pandas as pd
 pub = rospy.Publisher('Robotiq2FGripperRobotOutput', outputMsg.Robotiq2FGripper_robot_output, queue_size=10)
 command = outputMsg.Robotiq2FGripper_robot_output()
 
-HOST= "192.168.1.113"
+HOST= "ip"
 PORT = 30003  # socket 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect((HOST,PORT))
